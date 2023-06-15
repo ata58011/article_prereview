@@ -12,16 +12,16 @@ const Card = () => {
   };
 
   return (
-    <div className="mx-auto flex font-manrope">
-      <div className="max-w-sm">
+    <div className="mx-auto md:flex block  font-manrope">
+      <div className="md:max-w-sm">
         <img src={drawers} alt="" />
       </div>
-      <div className="max-w-lg bg-white flex flex-col gap-y-4 px-8 justify-center">
-        <h3 className="text-2xl text-[#4a5061] font-bold">
+      <div className="md:max-w-lg mx-auto  sm:flex bg-white block flex-col gap-y-4 px-8 justify-center">
+        <h3 className="md:text-2xl text-base mb-2 text-[#4a5061] font-bold">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
         </h3>
-        <p className="text-xs text-[#9ea1aa]">
+        <p className="text-xs text-[#9ea1aa] mb-2">
           Ever been in a room and felt like something was missing? Perhaps it
           felt slightly bare and uninviting. I've got some simple tips to help
           you make any room feel complete.
@@ -38,19 +38,11 @@ const Card = () => {
               <h5 className="text-[#9ea1aa] text-xs">28 Jun 2020</h5>
             </div>
           </div>
-          <div>
-            <button
-              className="bg-[#edf2f7] w-9 h-9 flex items-center justify-center rounded-full active:bg-[rgb(24,28,34)] active:text-white"
-              onClick={toggleSocialMedia}
-            >
-              <i className="active:bg-white">
-                <img src={share} alt="" />
-              </i>
-            </button>
+          <div className="flex flex-col items-center gap-y-2  ">
             {isSocialMediaVisible && (
               <div
                 id="social-media-wrapper"
-                className="bg-[#48556A] absolute h-auto py-4 w-64 flex justify-center items-center rounded-lg bottom-72 right-44"
+                className="bg-[#48556A]  h-auto py-4 w-64 flex justify-center items-center rounded-lg "
               >
                 <ul className="flex gap-x-4">
                   <li className="text-base text-white tracking-[.25em]">
@@ -68,6 +60,14 @@ const Card = () => {
                 </ul>
               </div>
             )}
+            <button
+              className="bg-[#edf2f7] w-9 h-9 flex items-center justify-center rounded-full active:bg-[rgb(24,28,34)] active:text-white"
+              onClick={toggleSocialMedia}
+            >
+              <i className="active:bg-white">
+                <img src={share} alt="" />
+              </i>
+            </button>
           </div>
         </div>
       </div>
