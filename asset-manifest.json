@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/article_prereview/static/css/main.d5c77c6a.css",
+    "main.js": "/article_prereview/static/js/main.87f60e95.js",
+    "static/media/drawers.jpg": "/article_prereview/static/media/drawers.631135b079e9f19bada8.jpg",
+    "index.html": "/article_prereview/index.html",
+    "static/media/icon-facebook.svg": "/article_prereview/static/media/icon-facebook.1e9b33385e6dfe7a61acbff13373209c.svg",
+    "static/media/icon-share.svg": "/article_prereview/static/media/icon-share.890102fe1500a6fba9a76d1b384684d2.svg",
+    "main.d5c77c6a.css.map": "/article_prereview/static/css/main.d5c77c6a.css.map",
+    "main.87f60e95.js.map": "/article_prereview/static/js/main.87f60e95.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d5c77c6a.css",
+    "static/js/main.87f60e95.js"
+  ]
+}
