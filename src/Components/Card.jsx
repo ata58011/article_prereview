@@ -12,12 +12,12 @@ const Card = () => {
   };
 
   return (
-    <div className="mx-auto md:flex block  font-manrope">
-      <div className="md:max-w-sm">
+    <div className="mx-auto sm:flex block font-manrope relative">
+      <div className="lg:max-w-sm max-w-xs">
         <img src={drawers} alt="" />
       </div>
-      <div className="md:max-w-lg mx-auto  sm:flex bg-white block flex-col gap-y-4 px-8 justify-center">
-        <h3 className="md:text-2xl text-base mb-2 text-[#4a5061] font-bold">
+      <div className="lg:max-w-lg sm:max-w-md max-w-xs mx-auto sm:flex bg-white block flex-col gap-y-4 px-8 justify-center">
+        <h3 className="lg:text-2xl text-base mb-2 text-[#4a5061] font-bold">
           Shift the overall look and feel by adding these wonderful touches to
           furniture in your home
         </h3>
@@ -28,9 +28,7 @@ const Card = () => {
         </p>
         <div className="flex justify-between items-center">
           <div id="user-part" className="flex items-center gap-x-4">
-            <div>
-              <img src={avatar} alt="" className="w-16 h-16 rounded-full" />
-            </div>
+            <img src={avatar} alt="" className="w-16 h-16 rounded-full" />
             <div>
               <h4 className="text-[#4a5061] font-bold text-sm">
                 Michelle Appleton
@@ -38,24 +36,22 @@ const Card = () => {
               <h5 className="text-[#9ea1aa] text-xs">28 Jun 2020</h5>
             </div>
           </div>
-          <div className="flex flex-col items-center gap-y-2  ">
+          <div className="flex flex-col items-center gap-y-2 relative">
             {isSocialMediaVisible && (
               <div
                 id="social-media-wrapper"
-                className="bg-[#48556A]  h-auto py-4 w-64 flex justify-center items-center rounded-lg "
+                className="bg-[#48556A] py-4 w-48	  block  sm:flex justify-center items-center rounded-lg absolute bottom-10"
               >
-                <ul className="flex gap-x-4">
-                  <li className="text-base text-white tracking-[.25em]">
-                    SHARE
+                <ul className="flex gap-x-4 items-center">
+                  <li className="text-sm text-white tracking-[.25em]">SHARE</li>
+                  <li>
+                    <img src={facebook} alt="" className="w-4 h-4" />
                   </li>
                   <li>
-                    <img src={facebook} alt="" className="w-6 h-6" />
+                    <img src={facebook} alt="" className="w-4 h-4" />
                   </li>
                   <li>
-                    <img src={facebook} alt="" className="w-6 h-6" />
-                  </li>
-                  <li>
-                    <img src={facebook} alt="" className="w-6 h-6" />
+                    <img src={facebook} alt="" className="w-4 h-4" />
                   </li>
                 </ul>
               </div>
@@ -64,9 +60,7 @@ const Card = () => {
               className="bg-[#edf2f7] w-9 h-9 flex items-center justify-center rounded-full active:bg-[rgb(24,28,34)] active:text-white"
               onClick={toggleSocialMedia}
             >
-              <i className="active:bg-white">
-                <img src={share} alt="" />
-              </i>
+              <img src={share} alt="" />
             </button>
           </div>
         </div>
